@@ -14,8 +14,7 @@ def add_letter(line, letter):
         return line + " " + s_letter
     
 for i in f:
-    line = i.strip().split("|")[1].split()
-    lines.apped()
+    lines.append(i.strip().split("|")[1].split())
     
 for i in f1:
     lens.append(len(i.strip().split()))
