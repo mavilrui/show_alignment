@@ -46,3 +46,4 @@ for line in lines:
     print(aux_top)
     print(aux_bot)
     cont += 1
+print("-"*max_len)
