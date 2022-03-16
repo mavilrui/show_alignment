@@ -2,7 +2,6 @@ import sys
 
 f = open(sys.argv[1], "r")
 f1 = open(sys.argv[2], "r")
-f2 = open(sys.argv[3], "r")
 
 lines = []
 lens = []
