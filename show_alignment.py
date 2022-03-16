@@ -19,6 +19,8 @@ for i in f:
 for i in f1:
     lens.append(len(i.strip().split()))
     
+max_len = max(lens + [len(x) for x in lines]) + 15
+    
 cont = 0
 for line in lines:
     aux_top = ""
@@ -40,7 +42,7 @@ for line in lines:
         for aux in range(last_bot + 1, lens[cont])
             aux_top = add_letter(aux_top, " ")
             aux_bot = add_letter(aux_bot, aux)
-    print("*")
+    print("-"*15)
     print(aux_top)
     print(aux_bot)
     cont += 1
