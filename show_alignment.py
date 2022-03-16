@@ -13,7 +13,6 @@ def add_letter(line, letter):
     else:
         return line + " " + s_letter
     
-
 for i in f:
     line = i.strip().split("|")[1].split()
     lines.apped()
