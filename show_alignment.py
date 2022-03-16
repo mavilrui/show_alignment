@@ -30,7 +30,7 @@ for line in lines:
         val = int(line[idx])
         if val == last_bot:
             aux_top = add_letter(aux_top, idx)
-            aux_bot = add_letter(aux_bot, " ")
+            aux_bot = add_letter(aux_bot, "<")
         elif val > last_bot:
             for aux in range(last_bot + 1, val):
                 aux_top = add_letter(aux_top, " ")
