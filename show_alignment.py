@@ -26,6 +26,7 @@ for line in lines:
     aux_top = ""
     aux_bot = ""
     last_bot = 0
+    flag = True
     for idx in range(len(line)):
         val = int(line[idx])
         if val == last_bot:
@@ -38,13 +39,18 @@ for line in lines:
             aux_top = add_letter(aux_top, idx)
             aux_bot = add_letter(aux_bot, val)
             last_bot = val
+        else:
+            print("FAILURE")
+            flag = False
+            break
     if last_bot < lens[cont] - 1:
         for aux in range(last_bot + 1, lens[cont])
             aux_top = add_letter(aux_top, "*")
             aux_bot = add_letter(aux_bot, aux)
-    print("-"*max_len)
-    print(aux_top)
-    print(aux_bot)
+    if flag:
+        print("-"*max_len)
+        print(aux_top)
+        print(aux_bot)
     cont += 1
 print("-"*max_len)
     
