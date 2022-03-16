@@ -33,14 +33,14 @@ for line in lines:
             aux_bot = add_letter(aux_bot, "<")
         elif val > last_bot:
             for aux in range(last_bot + 1, val):
-                aux_top = add_letter(aux_top, " ")
+                aux_top = add_letter(aux_top, "*")
                 aux_bot = add_letter(aux_bot, aux)
             aux_top = add_letter(aux_top, idx)
             aux_bot = add_letter(aux_bot, val)
             last_bot = val
     if last_bot < lens[cont] - 1:
         for aux in range(last_bot + 1, lens[cont])
-            aux_top = add_letter(aux_top, " ")
+            aux_top = add_letter(aux_top, "*")
             aux_bot = add_letter(aux_bot, aux)
     print("-"*max_len)
     print(aux_top)
