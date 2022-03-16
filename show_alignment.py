@@ -42,7 +42,7 @@ for line in lines:
         for aux in range(last_bot + 1, lens[cont])
             aux_top = add_letter(aux_top, " ")
             aux_bot = add_letter(aux_bot, aux)
-    print("-"*15)
+    print("-"*max_len)
     print(aux_top)
     print(aux_bot)
     cont += 1
