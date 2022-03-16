@@ -19,7 +19,7 @@ for i in f:
 for i in f1:
     lens.append(len(i.strip().split()))
     
-max_len = max(lens + [len(x) for x in lines]) + 15
+max_len = max(lens + [len(x) for x in lines])*3 + 15
     
 cont = 0
 for line in lines:
